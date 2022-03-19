@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Servise</title>
+
+    <!--icono de ventana -->
+    <link rel="icon" type="image/png" href="icon.png" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive_index.css">
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Roboto:wght@100;300;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-padre">
+        <header class="header">
+            <nav class="navegador">
+                <div class="logo">
+                    <a class="nav-link" href="index.html"><img src="img/img web2.jpg"></a>
+                </div>
+                <div class="buscadores">
+                    <ul>
+                        <!--Los buscadores seran modificados mas adelante-->
+                        <li>
+                            <!-- BUSCADOR POR TAG-->
+                            <form action="" method="post">
+                                <input type="search" placeholder="Buscar..." name="buscador" id="busquedaportag">
+                                <input type="image"
+                                    src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" width="10"
+                                    height="10">
+                            </form>
+                        </li>
+                        <li>
+                            <!-- drop-->
+                            <select name="cars" id="cars" placeholder="Catgorias">
+                                <option value="Categorias">Categorias</option>
+                                <optgroup label="Elige una opcion"></optgroup>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="opel">Opel</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="section/registrarseclienteview.html">Registrarse como cliente
+                                |</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="section/registrarsepeluqueroview.html">Registrarse como peluquero
+                                |</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="section/loginview.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="navegador_responsive">
+                <nav>
+                    <div class="menu-contains">
+                        <!--<div class="logo_responsive">
+                            <a href="index.html"><img src="img/Logo.jpg"></a>
+                        </div>
+                        <div class="buscadores">
+                            <ul>
+                                Los buscadores seran modificados mas adelante
+                                <li>
+                                     BUSCADOR POR TAG-
+                                    <form action="" method="post">
+                                        <input type="search" placeholder="Buscar..." name="buscador" id="busquedaportag">
+                                        <input type="image"
+                                            src="https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png" width="10"
+                                            height="10">
+                                    </form>
+                                </li>
+                                <li>
+                                     drop
+                                    <select name="cars" id="cars" placeholder="Catgorias">
+                                        <option value="Categorias">Categorias</option>
+                                        <optgroup label="Elige una opcion"></optgroup>
+                                        <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <ul class="menu-principal">
+                            <div class="menu fas fa-bars"></div>
+                            <div class="elementos-menu">
+                                <li><a href="index.html" class="nav-elemento-responsive">Inicio</a></li>
+                                <li><a href="section/registrarseclienteview.html"
+                                        class="nav-elemento-responsive">Registrarse como cliente</a></li>
+                                <li><a href="section/registrarsepeluqueroview.html"
+                                        class="nav-elemento-responsive">Registrarse como peluquero</a></li>
+                                <li><a href="section/loginview.html" class="nav-elemento-responsive">Login</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section>
+                <!-- carrusel de publicidad, proximamente-->
+                <div class="slider">
+                    <ul>
+                        <li>
+                            <img src="img/banner.jpg">
+                        </li>
+                        <li>
+                            <img src="img/banner.jpg">
+                        </li>
+                        <li>
+                            <img src="img/banner.jpg">
+                        </li>
+                        <li>
+                            <img src="img/banner.jpg">
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section>
+                <h3>¿Qué hay de nuevo?</h3>
+                <!-- locales -->
+                <ul class="tarjetas">
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tarjeta__estilo">
+                            <a class="link" href="section/perfildellocal.html">
+                                <img src="img/perfil.jpg">
+                                <p>Nombre de local</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <div>
+                <h4>Descarga la app</h4>
+            </div>
+            <div>
+                <li>
+                    <a href="https://www.apple.com/la/app-store/"><img src="img/applestore.png" width="200"
+                            height="50"></a>
+                </li>
+                <li>
+                    <a href="https://play.google.com/store?hl=es_AR&gl=US"><img src="img/playstore.png" width="200"
+                            height="50"></a>
+                </li>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
