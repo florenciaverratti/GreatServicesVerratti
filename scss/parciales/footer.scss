@@ -1,0 +1,20 @@
+/*Footer*/
+.footer div {
+    padding-top: 1rem;
+    margin-left: 3rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.footer {
+    background-color: #2d4b74;
+    grid-area: footer;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    color: #ffffff;
+    width: 100%;
+}

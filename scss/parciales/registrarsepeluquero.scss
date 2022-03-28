@@ -1,8 +1,27 @@
+.grid-padre {
+    display: grid;
+    grid-template-rows: 0.5fr 11fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+main {
+    grid-area: main;
+}
+
+
+.header {
+    grid-area: header;
+}
+
 @media screen and (max-width:915px){
 
     .grid-padre {
         display: grid;
-        grid-template-rows: 0.04fr 6fr 3fr;
+        grid-template-rows: 0.04fr 10fr 4fr;
         grid-template-columns: 100%;
         grid-template-areas:
             "header"
@@ -10,12 +29,10 @@
             "footer";
         height: auto;
     }
-
     .tarjeta__estilo--formulario{
         margin-top: 10vh;
+        font-size: 4vw;
         margin-left: 5vw;
         margin-right: 5vw;
     }
-
-
 }
