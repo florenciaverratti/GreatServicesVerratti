@@ -1,37 +1,34 @@
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   min-height: 100vh; }
 
 /*estilos*/
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 100;
   text-align: center; }
 
 h5 {
   padding-top: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 700;
   text-align: center; }
 
 /*Footer*/
-.footer div {
-  padding-top: 1rem;
-  margin-left: 3rem; }
-
 .footer {
   position: absolute;
-  bottom: 0; }
-
-.footer {
+  bottom: 0;
   background-color: #2d4b74;
   grid-area: footer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   color: #ffffff;
   width: 100%; }
+  .footer div {
+    padding-top: 1rem;
+    margin-left: 3rem; }
 
 /*Navbar*/
 .navegador {
@@ -39,6 +36,7 @@ h5 {
   font-family: 'Montserrat';
   font-weight: 700; }
 
+/*no anidar porque rompe*/
 a.nav-link {
   text-decoration: none;
   color: #ffffff; }
@@ -47,30 +45,30 @@ a.nav-link {
   width: 50px;
   height: 50px; }
 
-.link img {
-  width: 100%;
-  height: 70%; }
+.nav-item:hover {
+  background: white;
+  border-radius: 8px; }
 
-.link p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 100;
-  margin-top: 0.5rem;
-  text-align: left;
-  padding-left: 0.5rem; }
-
-div.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+.nav-item {
+  transition: 0.6s; }
 
 .link {
   text-decoration: none;
-  font-family: 'Roboto Thin', sans-serif; }
+  font-family: "Roboto Thin", sans-serif; }
+  .link img {
+    width: 100%;
+    height: 70%; }
+  .link p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100;
+    margin-top: 0.5rem;
+    text-align: left;
+    padding-left: 0.5rem; }
 
-.img_local {
-  transition: background-color .5s; }
-  .img_local .img_local:hover {
-    background-color: green; }
+div .card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .grid-padre {
   display: grid;
@@ -133,16 +131,21 @@ main {
     font-size: 4vw;
     height: 40vh; } }
 
-.foto-local img {
-  width: 90%;
-  height: 35vh;
-  border-radius: 10px;
-  box-shadow: 0px 2px #1a1919; }
-
 .foto-local {
   margin-top: 3vh;
   display: flex;
   justify-content: center; }
+  .foto-local img {
+    width: 90%;
+    height: 35vh;
+    border-radius: 10px;
+    box-shadow: 0px 2px #1a1919; }
+
+.boton {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: #2d4b74; }
 
 .nombre-salon {
   display: flex;

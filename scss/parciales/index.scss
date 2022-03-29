@@ -1,34 +1,27 @@
-.link img {
-    width: 100%;
-    height: 70%;
-}
-
-.link p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 100;
-    margin-top: 0.5rem;
-    text-align: left;
-    padding-left: 0.5rem;
-}
-div.card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .link {
     text-decoration: none;
-    font-family: 'Roboto Thin', sans-serif;
-    
-}
-
-.img_local{
-    transition: background-color .5s;
-    .img_local:hover{
-        background-color: green;
-    
+    font-family: $fuente_roboto_thin;
+    img {
+        width: 100%;
+        height: 70%;
+    }
+    p {
+        font-family: $fuente_monserrat;
+        font-size: 100;
+        margin-top: 0.5rem;
+        text-align: left;
+        padding-left: 0.5rem;
     }
 }
 
+div{
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
 
 .grid-padre {
     display: grid;

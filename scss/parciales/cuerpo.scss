@@ -1,20 +1,21 @@
+@import "parciales/variables.scss";
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: $fuente_roboto;
     position: relative;
     min-height: 100vh;
 }
 
 /*estilos*/
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuente_monserrat;
     font-size: 100;
     text-align: center;
 }
 
 h5 {
     padding-top: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fuente_monserrat;
     font-size: 700;
     text-align: center;
 }
