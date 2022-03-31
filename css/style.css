@@ -1,36 +1,47 @@
+/* moviles 
+@media (max-width:576px)
+
+tablets 
+@media (min-width:576px) and (max-width:768px)*/
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   position: relative;
   min-height: 100vh; }
 
-/*estilos*/
+/*estilos 3456*/
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 100;
+  font-weight: 600;
+  text-align: center; }
+
+h4 {
+  padding-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: large;
   text-align: center; }
 
 h5 {
-  padding-top: 1rem;
   font-family: "Montserrat", sans-serif;
-  font-size: 700;
+  font-weight: 300;
   text-align: center; }
 
-/*Footer*/
-.footer {
-  position: absolute;
-  bottom: 0;
-  background-color: #2d4b74;
-  grid-area: footer;
+h6 {
   font-family: "Montserrat", sans-serif;
-  list-style: none;
-  color: #ffffff;
-  width: 100%; }
-  .footer div {
-    padding-top: 1rem;
-    margin-left: 3rem; }
+  font-weight: 200;
+  display: inline; }
+
+/*Footer*/
+footer {
+  background-color: #2d4b74; }
 
 /*Navbar*/
+/* moviles 
+@media (max-width:576px)
+
+tablets 
+@media (min-width:576px) and (max-width:768px)*/
 .navegador {
   background-color: #2d4b74;
   font-family: 'Montserrat';
@@ -65,72 +76,20 @@ a.nav-link {
     text-align: left;
     padding-left: 0.5rem; }
 
-div .card {
-  display: flex;
+div .col-lg-3 {
   flex-wrap: wrap;
   justify-content: center; }
 
-.grid-padre {
-  display: grid;
-  grid-template-rows: 0.5fr 11fr 1fr;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+div .card {
+  margin-bottom: 1rem;
+  width: 90%;
+  border-radius: 8px; }
 
-main {
-  grid-area: main; }
+/* moviles 
+@media (max-width:576px)
 
-.header {
-  grid-area: header; }
-
-@media screen and (max-width: 915px) {
-  .tarjeta__estilo {
-    width: 75vw;
-    height: 50vh;
-    margin: 0;
-    margin-bottom: 7vh; }
-  .link {
-    font-size: 4.2vw; }
-  h3 {
-    font-size: 5.5vw; }
-  .grid-padre {
-    display: grid;
-    grid-template-rows: 0.06fr 15fr 1fr;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer";
-    height: auto; } }
-
-@keyframes cambio {
-  0% {
-    margin-left: 0; }
-  20% {
-    margin-left: 0; }
-  25% {
-    margin-left: -100%; }
-  45% {
-    margin-left: -100%; }
-  50% {
-    margin-left: -200%; }
-  70% {
-    margin-left: -200%; }
-  75% {
-    margin-left: -300%; }
-  100% {
-    margin-left: -300%; } }
-
-@media screen and (max-width: 915px) {
-  .grid-padre {
-    display: grid;
-    grid-template-rows: 0.06fr 15fr 5.5fr;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer";
-    height: auto; }
-  .tarjeta__estilo--formulario {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 10vh;
-    font-size: 4vw;
-    height: 40vh; } }
-
+tablets 
+@media (min-width:576px) and (max-width:768px)*/
 .foto-local {
   margin-top: 3vh;
   display: flex;
@@ -153,102 +112,8 @@ main {
   margin-left: 1rem;
   padding: 1.7rem; }
 
-.grid-padre {
-  display: grid;
-  grid-template-rows: 0.5fr 11fr 1fr;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer"; }
+/* moviles 
+@media (max-width:576px)
 
-main {
-  grid-area: main; }
-
-.header {
-  grid-area: header; }
-
-@media screen and (max-width: 915px) {
-  .content-flex {
-    flex-direction: column; }
-  .elementos {
-    width: 80vw;
-    margin-bottom: 10vh; }
-  .elementos-mapa {
-    width: 90%;
-    align-items: flex-start;
-    margin-left: 5vw;
-    margin-bottom: 5vh; }
-  .elementos-mapa iframe {
-    width: 80vw;
-    height: 40vh; }
-  .div_horarios {
-    font-size: 4.3vw;
-    width: 80vw;
-    height: 40%; }
-  .horarios {
-    justify-content: center;
-    font-size: 100%; }
-  h5 {
-    margin-top: 1vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    margin-bottom: 2vw;
-    font-size: 5vw; }
-  h3 {
-    font-size: 5.5vw; }
-  .elementos-servicios {
-    font-size: 4vw; }
-  .grid-padre {
-    display: grid;
-    column-gap: 5vh;
-    grid-template-rows: 0.08fr 18fr 2.6fr;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer";
-    height: auto; } }
-
-.grid-padre {
-  display: grid;
-  grid-template-rows: 0.5fr 11fr 1fr;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer"; }
-
-main {
-  grid-area: main; }
-
-.header {
-  grid-area: header; }
-
-@media screen and (max-width: 915px) {
-  .grid-padre {
-    display: grid;
-    grid-template-rows: 0.04fr 6fr 3fr;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer";
-    height: auto; }
-  .tarjeta__estilo--formulario {
-    margin-top: 10vh;
-    margin-left: 5vw;
-    margin-right: 5vw; } }
-
-.grid-padre {
-  display: grid;
-  grid-template-rows: 0.5fr 11fr 1fr;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer"; }
-
-main {
-  grid-area: main; }
-
-.header {
-  grid-area: header; }
-
-@media screen and (max-width: 915px) {
-  .grid-padre {
-    display: grid;
-    grid-template-rows: 0.04fr 10fr 4fr;
-    grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer";
-    height: auto; }
-  .tarjeta__estilo--formulario {
-    margin-top: 10vh;
-    font-size: 4vw;
-    margin-left: 5vw;
-    margin-right: 5vw; } }
+tablets 
+@media (min-width:576px) and (max-width:768px)*/

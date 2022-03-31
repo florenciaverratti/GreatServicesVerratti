@@ -1,4 +1,5 @@
 @import "parciales/variables.scss";
+
 body {
     margin: 0;
     font-family: $fuente_roboto;
@@ -6,16 +7,33 @@ body {
     min-height: 100vh;
 }
 
-/*estilos*/
+/*estilos 3456*/
 h3 {
     font-family: $fuente_monserrat;
-    font-size: 100;
+    font-weight: 600;
     text-align: center;
 }
 
-h5 {
+h4 {
     padding-top: 1rem;
     font-family: $fuente_monserrat;
-    font-size: 700;
+    font-weight: 400;
+    font-size: large;
     text-align: center;
+
+}
+
+h5 {
+    font-family: $fuente_monserrat;
+    font-weight: 300;
+    text-align: center;
+}
+h6 {
+    font-family: $fuente_monserrat;
+    font-weight: 200;
+    display: inline;
+}
+/*Footer*/
+footer {
+    background-color: $color_principal;
 }
