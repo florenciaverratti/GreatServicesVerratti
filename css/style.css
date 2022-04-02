@@ -15,22 +15,29 @@ h3 {
   font-weight: 600;
   text-align: center; }
 
-h4 {
+h4, h4.nombre-salon {
   padding-top: 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: large;
   text-align: center; }
+  h4.nombre-salon {
+    font-weight: 600; }
 
-h5 {
+h5, h5.titulo {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center; }
+  h5.titulo {
+    font-weight: 500; }
 
-h6 {
+h6, h6.descripcion {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   display: inline; }
+  h6.descripcion {
+    margin-right: 5%;
+    font-weight: 400; }
 
 /*Footer*/
 footer {
@@ -80,7 +87,7 @@ div .col-lg-3 {
   flex-wrap: wrap;
   justify-content: center; }
 
-div .card {
+div .col .card {
   margin-bottom: 1rem;
   width: 90%;
   border-radius: 8px; }
@@ -95,10 +102,23 @@ tablets
   display: flex;
   justify-content: center; }
   .foto-local img {
-    width: 90%;
-    height: 35vh;
     border-radius: 10px;
     box-shadow: 0px 2px #1a1919; }
+
+.nombre-salon {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  padding: 1.7rem; }
+
+.producto_descripcion,
+.servicio_descripcion,
+.promocion_descripcion {
+  display: flex;
+  justify-content: space-between; }
+
+.direccion_boton {
+  margin-right: 5%; }
 
 .boton {
   text-decoration: none;
@@ -106,11 +126,10 @@ tablets
   color: white;
   background: #2d4b74; }
 
-.nombre-salon {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 1rem;
-  padding: 1.7rem; }
+.horarios {
+  text-decoration: none;
+  font-family: "Roboto Thin", sans-serif;
+  font-weight: 300; }
 
 /* moviles 
 @media (max-width:576px)

@@ -21,18 +21,33 @@ h4 {
     font-size: large;
     text-align: center;
 
+    &.nombre-salon {
+        @extend h4;
+        font-weight: 600;
+    }
 }
 
 h5 {
     font-family: $fuente_monserrat;
     font-weight: 300;
     text-align: center;
+    &.titulo{
+        @extend h5 ;
+        font-weight: 500;
+    }
 }
+
 h6 {
     font-family: $fuente_monserrat;
     font-weight: 200;
     display: inline;
+    &.descripcion{
+        @extend h6 ;
+        margin-right: 5%;
+        font-weight: 400;
+    }
 }
+
 /*Footer*/
 footer {
     background-color: $color_principal;
