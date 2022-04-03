@@ -137,19 +137,14 @@ div .col .card {
   width: 90%;
   border-radius: 8px; }
 
-.grid-login {
-  display: grid;
-  grid-template-rows: 3.38fr 1fr;
-  grid-template-areas: "main" "footer"; }
-  @media screen and (max-width: 429px) {
-    .grid-login {
-      grid-template-rows: 3.38fr 1fr; } }
+body {
+  position: relative;
+  padding-bottom: 3em; }
 
-.main {
-  grid-area: main; }
-
-.footer {
-  grid-area: footer; }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 /*
 moviles 
