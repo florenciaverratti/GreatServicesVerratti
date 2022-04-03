@@ -1,1 +1,18 @@
 
+.grid-login{
+    display: grid;
+    grid-template-rows: 3.38fr 1fr;
+    grid-template-areas: "main"
+                         "footer";
+    @media screen and (max-width:429px) {
+        grid-template-rows: 3.38fr 1fr;
+    }
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}

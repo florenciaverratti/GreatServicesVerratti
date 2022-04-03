@@ -2,52 +2,76 @@
 
 body {
     margin: 0;
-    font-family: $fuente_roboto;
+    font-family: $fuente_monserrat;
     position: relative;
     min-height: 100vh;
 }
 
+$grosor-fuente: (
+    thin1: 100,
+    thin2: 200,
+    thin3: 300,
+    regular: 400,
+    mediano: 500,
+    grueso6: 600,
+    grueso7: 700
+);
 /*estilos 3456*/
 h3 {
-    font-family: $fuente_monserrat;
-    font-weight: 600;
+    font-weight: map-get($grosor-fuente, grueso6);
     text-align: center;
 }
 
 h4 {
     padding-top: 1rem;
-    font-family: $fuente_monserrat;
-    font-weight: 400;
+    font-weight: map-get($grosor-fuente, regular);
     font-size: large;
     text-align: center;
 
     &.nombre-salon {
         @extend h4;
-        font-weight: 600;
+        font-weight: map-get($grosor-fuente, grueso6);
     }
 }
 
 h5 {
-    font-family: $fuente_monserrat;
-    font-weight: 300;
+    font-weight: map-get($grosor-fuente, thin3);
     text-align: center;
     &.titulo{
         @extend h5 ;
-        font-weight: 500;
+        font-weight: map-get($grosor-fuente, mediano);
+    }
+    &.horario{
+        @extend h5 ;
+        font-weight: map-get($grosor-fuente, regular);
     }
 }
 
 h6 {
-    font-family: $fuente_monserrat;
-    font-weight: 200;
+    font-weight: map-get($grosor-fuente, thin2);
     display: inline;
     &.descripcion{
         @extend h6 ;
         margin-right: 5%;
-        font-weight: 400;
+        font-weight: map-get($grosor-fuente, mediano);
     }
 }
+.dias, .horas{
+    @extend h6 ;
+    font-weight: map-get($grosor-fuente, regular);
+}
 
+.boton {
+    text-decoration: none;
+    color: white;
+    background: $color_principal;
+}
+.tamanio{
+    @media screen and (max-width:576px) {
+        @include sizes(70%, 100%)
+    }
+    @include sizes(50%, 100%)
+}
 /*Footer*/
 footer {
     background-color: $color_principal;

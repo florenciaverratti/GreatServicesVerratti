@@ -2,13 +2,17 @@ $color_principal: #2d4b74;
 $fuente_roboto: 'Roboto', sans-serif;
 $fuente_roboto_thin:'Roboto Thin', sans-serif;
 $fuente_monserrat:'Montserrat', sans-serif;
-$vista: desktop;
 
-/* moviles 
+@mixin sizes ( $width,$height) {
+    width: $width;
+    height: $height;
+}
+/*
+moviles 
 @media (max-width:576px)
 
 tablets 
-@media (min-width:576px) and (max-width:768px)*/
+@media (min-width:576px) and (max-width:768px)
 
 @if $vista== tablet{
      @media (min-width:576px) and (max-width:768px){
@@ -23,3 +27,4 @@ tablets
         
     }
 }
+*/
