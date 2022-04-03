@@ -1,8 +1,9 @@
-body{
+.body-down{
 position: relative;
 padding-bottom: 3em;
+min-height: 100vh;
 }
-footer{
+.footer-down{
     position: absolute;
     bottom: 0;
     width: 100%;

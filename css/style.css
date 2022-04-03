@@ -137,11 +137,12 @@ div .col .card {
   width: 90%;
   border-radius: 8px; }
 
-body {
+.body-down {
   position: relative;
-  padding-bottom: 3em; }
+  padding-bottom: 3em;
+  min-height: 100vh; }
 
-footer {
+.footer-down {
   position: absolute;
   bottom: 0;
   width: 100%; }
