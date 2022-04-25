@@ -42,12 +42,7 @@
                             <img src="img/LogoC.png" alt="logotipo">
                         </a>
                     </div>
-                    <!--Buscadores-->
-                    <!--Buscador por TAG-->
-                    <form class="d-flex">
-                        <input class="form-control me-2 m-auto" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Search</button>
-                    </form>
+
                     <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -55,8 +50,15 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!--Buscador por Categorias-->
-                            <!-- El drop mostraria las categorias de peluqueria en base a una base de datos en un futuro-->
+                            <!--Buscadores
+                            Buscador por TAG
+                            <form class="d-flex">
+                                <input class="form-control me-2 m-auto" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </form>
+                            Buscador por Categorias
+                             El drop mostraria las categorias de peluqueria en base a una base de datos en un futuro
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,7 +72,7 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">Promociones</a></li>
                                 </ul>
-                            </li>
+                            </li>-->
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page"
                                     href="section/registrarseclienteview.html">Registrarse como cliente</a>
@@ -80,7 +82,59 @@
                                     peluquero</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="section/loginview.html">Login</a>
+                                <a class="nav-link" href="section/faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Login</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Inicia sesión!</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3 needs-validation" novalidate>
+                                                    <div class="col-12">
+                                                        <label for="validationUsuario"
+                                                            class="form-label">Usuario</label>
+                                                        <div class="input-group has-validation">
+                                                            <span class="input-group-text"
+                                                                id="inputGroupPrepend">@</span>
+                                                            <input type="text" class="form-control"
+                                                                id="validationUsuario"
+                                                                aria-describedby="inputGroupPrepend" required
+                                                                placeholder="Nombre de usuario">
+                                                            <div class="invalid-feedback">Por favor ingrese un nombre de
+                                                                usuario</div>
+                                                            <div class="valid-feedback">Validado!</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="validationContrasena"
+                                                            class="form-label">Contraseña</label>
+                                                        <input type="password" class="form-control"
+                                                            id="validationContrasena" required placeholder="********">
+                                                        <div class="invalid-feedback">Por favor ingrese una contraseña
+                                                        </div>
+                                                        <div class="valid-feedback">Validado!</div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                            <button class="btn boton" type="submit">Iniciar
+                                                            sesión</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -274,6 +328,28 @@
     <!--boostrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
     </script>
 </body>
 

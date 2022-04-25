@@ -7,24 +7,3 @@ $fuente_monserrat:'Montserrat', sans-serif;
     width: $width;
     height: $height;
 }
-/*
-moviles 
-@media (max-width:576px)
-
-tablets 
-@media (min-width:576px) and (max-width:768px)
-
-@if $vista== tablet{
-     @media (min-width:576px) and (max-width:768px){
-
-    };
-}@else if $vista== mobile{
-    @media (max-width:576px){
-
-    };
-}@else{
-    @media screen and (min-width:768px){
-        
-    }
-}
-*/

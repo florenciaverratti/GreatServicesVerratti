@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Servise - Login</title>
+    <!--icono de ventana -->
+    <link rel="icon" type="image/png" href="../icon.png" />
+    <!--Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/97f134391f.js" crossorigin="anonymous"></script>
+    <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!--boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="description"
+        content="Creamos esta plataforma con el fin de que todos los usuarios consigan una peluqueria/barberia cerca y accesible y que los clientes lleguen a mas publico">
+    <meta name="keywords"
+        content="peluqueria, barberia, corte,tintura, barba,alisado, keratina, botox, planchita, brashing,balayage, fantasia,degrade,argentina, iniciar sesion, olvide contraseña">
+</head>
+
+<body class="body-down">
+    <div class="">
+        <header class="header">
+            <!--navbar boostrap-->
+            <nav class="navbar navbar-expand-lg navegador shadow p-3 mb-4 rounded">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <a class="nav-link p-2 pb-0" href="../index.html">
+                            <img src="../img/LogoC.png" alt="logotipo">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="registrarseclienteview.html">Registrarse
+                                    como cliente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="registrarsepeluqueroview.html">Registrarse como
+                                    peluquero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Login</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Inicia sesión!</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="row g-3 needs-validation" novalidate>
+                                                    <div class="col-12">
+                                                        <label for="validationUsuario"
+                                                            class="form-label">Usuario</label>
+                                                        <div class="input-group has-validation">
+                                                            <span class="input-group-text"
+                                                                id="inputGroupPrepend">@</span>
+                                                            <input type="text" class="form-control"
+                                                                id="validationUsuario"
+                                                                aria-describedby="inputGroupPrepend" required
+                                                                placeholder="Nombre de usuario">
+                                                            <div class="invalid-feedback">Por favor ingrese un nombre de
+                                                                usuario</div>
+                                                            <div class="valid-feedback">Validado!</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="validationContrasena"
+                                                            class="form-label">Contraseña</label>
+                                                        <input type="password" class="form-control"
+                                                            id="validationContrasena" required placeholder="********">
+                                                        <div class="invalid-feedback">Por favor ingrese una contraseña
+                                                        </div>
+                                                        <div class="valid-feedback">Validado!</div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button class="btn boton" type="submit">Iniciar
+                                                            sesión</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- sirve como contenedor de todas las secciones-->
+        <div class="grid-login">
+            <main class="main">
+                <section>
+                    <div class="container">
+                        <h2 style="font-weight: 400;">¿Qué es Great Services?</h2>
+                        <h3 style="font-weight: 400;"> Para el peluquero/barbero</h3>
+                        <h4 style="font-weight:200; text-align: left;">
+                            Great Services es una plataforma con base en argentina dedicada a conectar expertos de la
+                            peluqueria y barberia con sus potenciales clientes de forma rapida y sencilla, nos avalan 10
+                            años
+                            de expertise uniendo profesionales con sus potenciales clietes. <br>
+                            En una actualidad innundada de informacion y ofertas, prevalece la sencillez y rapides a la
+                            hora de encontrar
+                            al profesional más idoneo para nuestra imagen. Con nuestro sistema podran en 3 sencillos
+                            pasos no solo aumentar
+                            la exposicion sino tambien llevar un registro de conversion de clientes con una taza de
+                            exito garantizada <br></h4>
+
+                        <h4 style=" text-align: left;"> Beneficios:</h4>
+                        <h4 style="font-weight:200; text-align: left;">
+                            - Agenda online <br>
+                            - Servicio de cobranza por mercado pago <br>
+                            - Servicio automatico de turnos con la informacion de su usuario por si necesita reprogramar
+                            su turno, servicio deseado, y facturacion para adjuntar <br>
+                            - Cobro de reserva de turno (opcional) <br>
+                            - Perfil personal de los servicios donde podra subir sus trabajos con precio y tiempo en que
+                            se realiza su trabajo <br>
+                            - Seccion de productos para vender articulos <br>
+                            - Seccion de promocion para combinar servicios y productos o multiples servicios <br></h4>
+
+                        <h3 style="font-weight: 400;"> Para el cliente</h3>
+                        <h4 style="font-weight:200; text-align: left;">
+                            Encontrar la peluqueria ideal para vos en tu zona nunca fue tan facil, filtra segun tus preferencias, zona
+                            precio, y estilo, rapidamente estaras en contacto y coordinando un turno con los mejores profesionales de nuestra
+                            red, conoce sus trabajos, experiencias y calificaciones de otros usuarios que ya son parte de activa
+                            de Great Service lograr la imagen que estabas buscando ya es mas facil, tenemos un sistema de recomendaciones
+                            con imagenes para que revises los estilos que nuestras peluquerias tienen para vos. </h4>
+                        <h4 style=" text-align: left;"> Beneficios:</h4>
+                        <h4 style="text-align: left;font-weight:200;">
+                            - Buscador por tag, mapa y filtro de las peluquerias/barberias deseadas <br>
+                            - Reserva de turnos, como su modificacion y cancelacion (ABM de turnos) <br>
+                            - Historial de turnos con la informacion correspondiente y un boton para repetir turno <br>
+                            - Acceso al perfil del peluquero donde vera sus trabajos, cuanto cuesta, y cuanto tarda en
+                            realizarlo <br>
+                            - Seccion de favoritos donde podra guardar los locales que mas les gusto <br>
+                        </h4><br>
+                        <h4>Los invitamos a conocer mas sobre el mundo Great Services y generar conexiones duraderas con
+                            sus clientes.</h4>
+
+                    </div>
+                </section>
+            </main>
+            <div class="container-fluid p-0 mt-5 footer-down">
+                <footer class=" text-center text-white">
+                    <!-- Grid container -->
+                    <div class="container p-4 pb-0">
+                        <!-- Section: Social media -->
+                        <section class="mb-4">
+                            <!-- Google -->
+                            <div class="row  p-2">
+                                <h5>Conocenos y descarga las apps!</h5>
+                            </div>
+                            <a class="btn btn-outline-light btn-floating m-1"
+                                href="https://play.google.com/store?hl=es_AR&gl=US" role="button google-play "><i
+                                    class="fab fa-google-play"></i></a>
+
+                            <!-- Apple Store -->
+                            <a class="btn btn-outline-light btn-floating m-1" href="https://www.apple.com/store"
+                                role="button apple-store"><i class="fab fa-apple"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-outline-light btn-floating m-1"
+                                href="https://www.linkedin.com/in/florencia-verratti-6a2b33175/"
+                                role="button linkedin"><i class="fab fa-linkedin-in"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-outline-light btn-floating m-1"
+                                href="https://github.com/florenciaverratti/GreatServicesVerratti.git"
+                                role="button github"><i class="fab fa-github"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                    <!-- Grid container -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2022 Copyright:
+                        <a class="text-white">Florencia Verratti</a>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+
+            </div>
+            <!-- End of .container -->
+        </div>
+    </div>
+    <!--boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
